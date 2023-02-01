@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+html {
+  scroll-behavior: smooth;
+  background: rgb(0, 0, 0);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #111111;
+}
+//custom-scrollbar
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #111111;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #536c7875;
+  &:hover {
+    background-color: #536c78e7;
+  }
+}
+@supports (scrollbar-color: #536c78e7 #111111) {
+  * {
+    scrollbar-color: #536c78e7 #111111;
+  }
+}
+//variables
+$colorTitulos: #00d7ff;
+$fondoOscuro: #027c93;
+$fondoClaro: #77fed5;
+$casiNegro: #252525;
+
+//fonts
+@import "./fonts";
+$dolce: "dolce";
+$dolceBold: "dolceBold";
+$pioggia: "pioggia";
+$disketMono: "disketMono";
+
+//font sizes
+$fs-xs: 0.6rem;
+$fs-sm: 0.8rem;
+$fs-md: 1rem;
+$fs-mdg: 1.2rem;
+$fs-lg: 1.4rem;
+$fs-xl: 1.6rem;
+$fs-xxl: 2rem;
+$fs-xxxl: 2.8rem;
+
+//box-shadow
+$bs: 3px 3px 3px hsla(0, 0%, 0%, 0.25);
+
+//extends
+
+%title {
+  font-family: $dolce;
+  color: $colorTitulos;
+  font-size: $fs-xxxl;
+  padding: 2rem;
+  text-shadow: $bs;
+}
+//Partials
+@import "./partials/header";
+@import "./partials/cover";

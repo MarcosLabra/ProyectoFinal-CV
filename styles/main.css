@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: rgb(0, 0, 0);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #111111;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(83, 108, 120, 0.4588235294);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(83, 108, 120, 0.9058823529);
+}
+
+@supports (scrollbar-color: rgba(83, 108, 120, 0.9058823529) #111111) {
+  * {
+    scrollbar-color: rgba(83, 108, 120, 0.9058823529) #111111;
+  }
+}
+@font-face {
+  font-family: dolce;
+  src: url(/assets/fonts/Dolce.ttf);
+}
+@font-face {
+  font-family: dolceBold;
+  src: url(/assets/fonts/DolceBold.ttf);
+}
+@font-face {
+  font-family: pioggia;
+  src: url(/assets/fonts/Pioggia.ttf);
+}
+@font-face {
+  font-family: disketMono;
+  src: url(/assets/fonts/DisketMono.ttf);
+}
+.header {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  height: 10vh;
+  width: 100vw;
+  background-color: black;
+  padding: 1.5rem;
+}
+.header a {
+  text-decoration: none;
+}
+.header a .header__brand {
+  display: flex;
+  align-items: center;
+}
+.header a .header__brand img {
+  height: 50px;
+}
+.header a .header__brand .header__brand--name h1 {
+  font-family: "dolce";
+  color: white;
+  font-size: 2.8rem;
+  margin-left: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.header a .header__brand .header__brand--name h1 span {
+  font-family: "dolceBold";
+  color: white;
+  font-size: 2.8rem;
+  transition: all 0.3s ease-in-out;
+}
+.header a .header__brand .header__brand--name h2 {
+  font-family: "dolce";
+  color: white;
+  font-size: 1.6rem;
+  margin: 0.5rem 0 0 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.cover {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cover .cover__heartLogo {
+  width: 250px;
+  -webkit-animation: 2.5s ease 0s infinite beat;
+          animation: 2.5s ease 0s infinite beat;
+}
+.cover .cover__angleDown {
+  position: absolute;
+  bottom: 60px;
+  width: 20px;
+  filter: drop-shadow(0px 0px 25px #00ffff);
+}
+
+@-webkit-keyframes beat {
+  0%, 50%, 100% {
+    transform: scale(1, 1);
+    filter: drop-shadow(0px 0px 15px #00ffff);
+  }
+  30%, 80% {
+    transform: scale(0.92, 0.95);
+    filter: drop-shadow(0px 0px 15px transparent);
+  }
+}
+
+@keyframes beat {
+  0%, 50%, 100% {
+    transform: scale(1, 1);
+    filter: drop-shadow(0px 0px 15px #00ffff);
+  }
+  30%, 80% {
+    transform: scale(0.92, 0.95);
+    filter: drop-shadow(0px 0px 15px transparent);
+  }
+}/*# sourceMappingURL=main.css.map */

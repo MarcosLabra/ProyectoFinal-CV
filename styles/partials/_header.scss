@@ -1,0 +1,45 @@
+.header {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  height: 10vh;
+  width: 100vw;
+  background-color: black;
+  padding: 1.5rem;
+
+  a {
+    text-decoration: none;
+    .header__brand {
+      display: flex;
+      align-items: center;
+      img {
+        height: 50px;
+      }
+      .header__brand--name {
+        h1 {
+          font-family: 'dolce';
+          color: white;
+          font-size: $fs-xxxl;
+          margin-left: 1rem;
+          transition: all 0.3s ease-in-out;
+          span {
+            font-family: $dolceBold;
+            color: white;
+            font-size: $fs-xxxl;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+        h2 {
+          font-family: $dolce;
+          color: white;
+          font-size: $fs-xl;
+          margin: 0.5rem 0 0 1rem;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
