@@ -34,6 +34,7 @@ $colorTitulos: #00d7ff;
 $fondoOscuro: #027c93;
 $fondoClaro: #77fed5;
 $casiNegro: #252525;
+$casiBlanco: #FBFBFB;
 
 //fonts
 @import "./fonts";
@@ -67,3 +68,5 @@ $bs: 3px 3px 3px hsla(0, 0%, 0%, 0.25);
 //Partials
 @import "./partials/header";
 @import "./partials/cover";
+@import "./partials/aboutMe";
+@import "./partials/skills";

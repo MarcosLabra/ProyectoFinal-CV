@@ -48,6 +48,14 @@ body {
   font-family: disketMono;
   src: url(/assets/fonts/DisketMono.ttf);
 }
+#skills h3, #aboutMe h3 {
+  font-family: "dolce";
+  color: #00d7ff;
+  font-size: 2.8rem;
+  padding: 2rem;
+  text-shadow: 3px 3px 3px hsla(0deg, 0%, 0%, 0.25);
+}
+
 .header {
   z-index: 100;
   position: fixed;
@@ -91,7 +99,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.cover {
+#cover {
   height: 100vh;
   width: 100vw;
   background-color: black;
@@ -101,12 +109,12 @@ body {
   align-items: center;
   position: relative;
 }
-.cover .cover__heartLogo {
+#cover .cover__heartLogo {
   width: 250px;
   -webkit-animation: 2.5s ease 0s infinite beat;
           animation: 2.5s ease 0s infinite beat;
 }
-.cover .cover__angleDown {
+#cover .cover__angleDown {
   position: absolute;
   bottom: 60px;
   width: 20px;
@@ -133,4 +141,100 @@ body {
     transform: scale(0.92, 0.95);
     filter: drop-shadow(0px 0px 15px transparent);
   }
+}
+#aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  font-family: "disketMono";
+}
+#aboutMe .aboutMe__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  width: 100vw;
+}
+#aboutMe .aboutMe__container img {
+  width: 40vw;
+  border-radius: 50%;
+}
+#aboutMe .aboutMe__container .aboutMe__container--info {
+  width: 50vw;
+}
+#aboutMe .aboutMe__container .aboutMe__container--info .aboutMe__container--profession {
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+#aboutMe .aboutMe__container .aboutMe__container--info .aboutMe__container--profession .aboutMe__container--profession--name {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+#aboutMe .aboutMe__container .aboutMe__container--info .aboutMe__container--profession p {
+  color: #FBFBFB;
+  font-size: 1.4rem;
+}
+#aboutMe .aboutMe__container .aboutMe__container--info .aboutMe__container--contact {
+  align-self: flex-start;
+  flex-direction: column;
+}
+#aboutMe .aboutMe__container .aboutMe__container--info .aboutMe__container--contact .aboutMe__container--contact--title {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+#aboutMe .aboutMe__container .aboutMe__container--info .aboutMe__container--contact p {
+  color: #FBFBFB;
+  font-size: 1.2rem;
+}
+#aboutMe article {
+  width: 100vw;
+  padding: 2rem;
+}
+#aboutMe article p {
+  color: #FBFBFB;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#skills {
+  padding: 2rem 5%;
+  scroll-margin-top: 9vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(2, 124, 147) 40%);
+}
+#skills .skills__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  min-height: 200px;
+  margin: 1rem;
+  padding: 1rem;
+  background: rgba(212, 204, 204, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+#skills .skills__card h4 {
+  color: #FBFBFB;
+  font-size: 2.8rem;
+  font-family: "pioggia";
+  width: 40%;
+  text-align: center;
+}
+#skills .skills__card:hover {
+  background: rgba(212, 204, 204, 0.2);
 }/*# sourceMappingURL=main.css.map */
