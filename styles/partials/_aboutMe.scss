@@ -18,12 +18,12 @@
       width: 40vw;
       border-radius: 50%;
     }
-    .aboutMe__container--info {
+    &--info {
       width: 50vw;
       .aboutMe__container--profession {
         flex-direction: column;
         margin-bottom: 1rem;
-        .aboutMe__container--profession--name {
+        &--name {
           font-size: $fs-xxl;
           font-weight: 600;
           padding-bottom: 0.5rem;
@@ -37,7 +37,7 @@
         align-self: flex-start;
 
         flex-direction: column;
-        .aboutMe__container--contact--title {
+        &--title {
           font-weight: 600;
           font-size: $fs-lg;
           margin-bottom: .5rem;

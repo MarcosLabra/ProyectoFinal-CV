@@ -78,20 +78,20 @@ body {
 .header a .header__brand img {
   height: 50px;
 }
-.header a .header__brand .header__brand--name h1 {
+.header a .header__brand--name h1 {
   font-family: "dolce";
   color: white;
   font-size: 2.8rem;
   margin-left: 1rem;
   transition: all 0.3s ease-in-out;
 }
-.header a .header__brand .header__brand--name h1 span {
+.header a .header__brand--name h1 span {
   font-family: "dolceBold";
   color: white;
   font-size: 2.8rem;
   transition: all 0.3s ease-in-out;
 }
-.header a .header__brand .header__brand--name h2 {
+.header a .header__brand--name h2 {
   font-family: "dolce";
   color: white;
   font-size: 1.6rem;
@@ -161,32 +161,32 @@ body {
   width: 40vw;
   border-radius: 50%;
 }
-#aboutMe .aboutMe__container .aboutMe__container--info {
+#aboutMe .aboutMe__container--info {
   width: 50vw;
 }
-#aboutMe .aboutMe__container .aboutMe__container--info .aboutMe__container--profession {
+#aboutMe .aboutMe__container--info .aboutMe__container--profession {
   flex-direction: column;
   margin-bottom: 1rem;
 }
-#aboutMe .aboutMe__container .aboutMe__container--info .aboutMe__container--profession .aboutMe__container--profession--name {
+#aboutMe .aboutMe__container--info .aboutMe__container--profession--name {
   font-size: 2rem;
   font-weight: 600;
   padding-bottom: 0.5rem;
 }
-#aboutMe .aboutMe__container .aboutMe__container--info .aboutMe__container--profession p {
+#aboutMe .aboutMe__container--info .aboutMe__container--profession p {
   color: #FBFBFB;
   font-size: 1.4rem;
 }
-#aboutMe .aboutMe__container .aboutMe__container--info .aboutMe__container--contact {
+#aboutMe .aboutMe__container--info .aboutMe__container--contact {
   align-self: flex-start;
   flex-direction: column;
 }
-#aboutMe .aboutMe__container .aboutMe__container--info .aboutMe__container--contact .aboutMe__container--contact--title {
+#aboutMe .aboutMe__container--info .aboutMe__container--contact--title {
   font-weight: 600;
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
-#aboutMe .aboutMe__container .aboutMe__container--info .aboutMe__container--contact p {
+#aboutMe .aboutMe__container--info .aboutMe__container--contact p {
   color: #FBFBFB;
   font-size: 1.2rem;
 }
@@ -205,36 +205,88 @@ body {
   padding: 2rem 5%;
   scroll-margin-top: 9vh;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: rgb(0, 0, 0);
   background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(2, 124, 147) 40%);
 }
-#skills .skills__card {
+#skills .skillsCards__Container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#skills .skillsCards__Container .card {
+  position: relative;
+  width: 80vw;
+  height: 200px;
+  color: white;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+  margin-bottom: 2rem;
+}
+#skills .skillsCards__Container .card:hover {
+  transform: rotateY(0.5turn);
+}
+#skills .skillsCards__Container .card .card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: 1s ease-in-out;
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+}
+#skills .skillsCards__Container .card .card__face--front {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80vw;
-  min-height: 200px;
-  margin: 1rem;
-  padding: 1rem;
   background: rgba(212, 204, 204, 0.2);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: all 0.3s ease-in-out;
 }
-#skills .skills__card h4 {
+#skills .skillsCards__Container .card .card__face--front h4 {
   color: #FBFBFB;
   font-size: 2.8rem;
   font-family: "pioggia";
-  width: 40%;
+  width: 60%;
   text-align: center;
 }
-#skills .skills__card:hover {
+#skills .skillsCards__Container .card .card__face--back {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: rgba(212, 204, 204, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transform: rotateY(0.5turn);
+}
+#skills .skillsCards__Container .card .card__face--back--iconContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+}
+#skills .skillsCards__Container .card .card__face--back--iconContainer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#skills .skillsCards__Container .card .card__face--back--iconContainer div img {
+  width: 40px;
+  height: 50px;
+  margin: 0.5rem 1rem;
+}
+#skills .skillsCards__Container .card .card__face--back--iconContainer div p {
+  font-size: 1.2rem;
 }/*# sourceMappingURL=main.css.map */
