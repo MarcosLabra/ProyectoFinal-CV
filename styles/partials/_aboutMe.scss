@@ -54,7 +54,7 @@
     padding: 2rem;
     p {
       color: $casiBlanco;
-      font-size: $fs-mdg;
+      font-size: $fs-lg;
       margin-bottom: 0.5rem;
       text-align: center;
     }
@@ -74,7 +74,7 @@
       margin-left: 1rem;
       font-family: $disketMono;
       color: #fff;
-      font-size: $fs-md;
+      font-size: $fs-mdg;
       transition: all 0.3s ease-in-out;
       &:hover {
         color: $colorTitulos;
