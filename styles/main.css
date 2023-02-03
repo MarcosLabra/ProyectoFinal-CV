@@ -200,6 +200,30 @@ body {
   margin-bottom: 0.5rem;
   text-align: center;
 }
+#aboutMe a {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+#aboutMe a img {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#aboutMe a p {
+  margin-left: 1rem;
+  font-family: "disketMono";
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+#aboutMe a p:hover {
+  color: #00d7ff;
+  text-shadow: 3px 3px 3px hsla(0deg, 0%, 0%, 0.25);
+}
 
 #skills {
   padding: 2rem 5%;
@@ -219,7 +243,7 @@ body {
 #skills .skillsCards__Container .card {
   position: relative;
   width: 80vw;
-  height: 200px;
+  height: 280px;
   color: white;
   cursor: pointer;
   transition: 1s ease-in-out;
@@ -258,10 +282,11 @@ body {
   text-align: center;
 }
 #skills .skillsCards__Container .card .card__face--back {
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   background: rgba(212, 204, 204, 0.2);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -275,6 +300,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   width: 70%;
+  margin-bottom: 2rem;
 }
 #skills .skillsCards__Container .card .card__face--back--iconContainer div {
   display: flex;
@@ -288,5 +314,23 @@ body {
   margin: 0.5rem 1rem;
 }
 #skills .skillsCards__Container .card .card__face--back--iconContainer div p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+#skills .skillsCards__Container .card .card__face--back--certificateContainer ul li {
+  list-style: none;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+#skills .skillsCards__Container .card .card__face--back--certificateContainer ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #FBFBFB;
+  text-decoration: none;
+  transition: all;
+}
+#skills .skillsCards__Container .card .card__face--back--certificateContainer ul li a:hover {
+  color: #00d7ff;
 }/*# sourceMappingURL=main.css.map */

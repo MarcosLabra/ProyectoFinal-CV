@@ -40,7 +40,7 @@
         &--title {
           font-weight: 600;
           font-size: $fs-lg;
-          margin-bottom: .5rem;
+          margin-bottom: 0.5rem;
         }
         p {
           color: $casiBlanco;
@@ -49,14 +49,37 @@
       }
     }
   }
-  article{
+  article {
     width: 100vw;
     padding: 2rem;
-    p{
-        color: $casiBlanco;
-        font-size: $fs-mdg;
-        margin-bottom: .5rem;
-        text-align: center;
+    p {
+      color: $casiBlanco;
+      font-size: $fs-mdg;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+  }
+  a {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    img {
+      width: 25px;
+      height: 25px;
+      object-fit: contain;
+    }
+    p {
+      margin-left: 1rem;
+      font-family: $disketMono;
+      color: #fff;
+      font-size: $fs-md;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: $colorTitulos;
+        text-shadow: $bs;
+      }
     }
   }
 }
