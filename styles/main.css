@@ -48,7 +48,7 @@ body {
   font-family: disketMono;
   src: url(/assets/fonts/DisketMono.ttf);
 }
-#skills h3, #aboutMe h3 {
+#experience h3, #skills h3, #aboutMe h3 {
   font-family: "dolce";
   color: #00d7ff;
   font-size: 2.8rem;
@@ -333,4 +333,14 @@ body {
 }
 #skills .skillsCards__Container .card .card__face--back--certificateContainer ul li a:hover {
   color: #00d7ff;
+}
+
+#experience {
+  padding: 2rem 5%;
+  scroll-margin-top: 9vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 0, 0);
 }/*# sourceMappingURL=main.css.map */
