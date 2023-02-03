@@ -34,19 +34,19 @@ body {
 }
 @font-face {
   font-family: dolce;
-  src: url(/assets/fonts/Dolce.ttf);
+  src: url(./assets/fonts/Dolce.ttf);
 }
 @font-face {
   font-family: dolceBold;
-  src: url(/assets/fonts/DolceBold.ttf);
+  src: url(./assets/fonts/DolceBold.ttf);
 }
 @font-face {
   font-family: pioggia;
-  src: url(/assets/fonts/Pioggia.ttf);
+  src: url(./assets/fonts/Pioggia.ttf);
 }
 @font-face {
   font-family: disketMono;
-  src: url(/assets/fonts/DisketMono.ttf);
+  src: url(./assets/fonts/DisketMono.ttf);
 }
 #experience h3, #skills h3, #aboutMe h3 {
   font-family: "dolce";
