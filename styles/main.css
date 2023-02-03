@@ -56,7 +56,7 @@ body {
   text-shadow: 3px 3px 3px hsla(0deg, 0%, 0%, 0.25);
 }
 
-.header {
+header {
   z-index: 100;
   position: fixed;
   display: flex;
@@ -68,35 +68,75 @@ body {
   background-color: black;
   padding: 1.5rem;
 }
-.header a {
+header a {
   text-decoration: none;
 }
-.header a .header__brand {
+header a .header__brand {
   display: flex;
   align-items: center;
 }
-.header a .header__brand img {
+header a .header__brand img {
   height: 50px;
 }
-.header a .header__brand--name h1 {
+header a .header__brand--name h1 {
   font-family: "dolce";
   color: white;
   font-size: 2.8rem;
   margin-left: 1rem;
   transition: all 0.3s ease-in-out;
 }
-.header a .header__brand--name h1 span {
+header a .header__brand--name h1 span {
   font-family: "dolceBold";
   color: white;
   font-size: 2.8rem;
   transition: all 0.3s ease-in-out;
 }
-.header a .header__brand--name h2 {
+header a .header__brand--name h2 {
   font-family: "dolce";
   color: white;
   font-size: 1.6rem;
   margin: 0.5rem 0 0 1rem;
   transition: all 0.3s ease-in-out;
+}
+
+.mobileMenu {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: -100vh;
+  width: 100vw;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.8705882353);
+  transition: all 1s ease-in-out;
+}
+.mobileMenu .mobileMenu__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobileMenu .mobileMenu__nav a {
+  text-decoration: none;
+  font-family: "dolceBold";
+  color: #00d7ff;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  filter: drop-shadow(3px 3px 3px hsla(0deg, 0%, 0%, 0.25));
+}
+.mobileMenu .mobileMenu__social a {
+  padding-left: 1rem;
+}
+.mobileMenu .mobileMenu__social a img {
+  width: 30px;
+  height: 30px;
+}
+
+.show {
+  top: 0;
 }
 
 #cover {
@@ -143,6 +183,7 @@ body {
   }
 }
 #aboutMe {
+  padding: 2rem 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,7 +195,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 2rem;
+  padding: 2rem;
+  padding-right: 0;
   width: 100vw;
 }
 #aboutMe .aboutMe__container img {
@@ -167,15 +209,16 @@ body {
 #aboutMe .aboutMe__container--info .aboutMe__container--profession {
   flex-direction: column;
   margin-bottom: 1rem;
+  color: #FBFBFB;
 }
 #aboutMe .aboutMe__container--info .aboutMe__container--profession--name {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   padding-bottom: 0.5rem;
 }
-#aboutMe .aboutMe__container--info .aboutMe__container--profession p {
-  color: #FBFBFB;
-  font-size: 1.4rem;
+#aboutMe .aboutMe__container--info .aboutMe__container--profession--rol {
+  width: 80%;
+  font-size: 1.2rem;
 }
 #aboutMe .aboutMe__container--info .aboutMe__container--contact {
   align-self: flex-start;
@@ -187,6 +230,21 @@ body {
   margin-bottom: 0.5rem;
 }
 #aboutMe .aboutMe__container--info .aboutMe__container--contact p {
+  margin-bottom: 0.5rem;
+  color: #FBFBFB;
+  font-size: 1.2rem;
+}
+#aboutMe .aboutMe__container--info .aboutMe__container--contact div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+#aboutMe .aboutMe__container--info .aboutMe__container--contact div img {
+  width: 16px;
+  border-radius: 0;
+  margin-right: 0.5rem;
+}
+#aboutMe .aboutMe__container--info .aboutMe__container--contact div p {
   color: #FBFBFB;
   font-size: 1.2rem;
 }
@@ -260,7 +318,6 @@ body {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transition: 1s ease-in-out;
-  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
 }
 #skills .skillsCards__Container .card .card__face--front {
   display: flex;
@@ -343,4 +400,10 @@ body {
   align-items: center;
   justify-content: center;
   background: rgb(0, 0, 0);
+}
+footer {
+  height: 10vh;
+  width: 100vw;
+  background: black;
+  box-shadow: 0 -5px 50px #00d7ff;
 }/*# sourceMappingURL=main.css.map */

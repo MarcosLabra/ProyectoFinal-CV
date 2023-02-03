@@ -12,7 +12,7 @@
 
 <body>
 
-  <header class="header">
+  <header>
     <a href="/#cover">
       <div class="header__brand">
         <img src="./assets/images/corazonHeader.svg" alt="Logo con forma de corazon anatomico" />
@@ -22,10 +22,26 @@
         </div>
       </div>
     </a>
-    <img src="./assets/images/burgerMenu.svg" />
+    <img id="mobileMenuButton" src="./assets/images/burgerMenu.svg" />
   </header>
 
   <main>
+    <section class="mobileMenu" id="mobileMenu">
+      <div class="mobileMenu__nav">
+        <a href="/#aboutMe">Acerca de mi</a>
+        <a href="/#skills">Habilidades</a>
+        <a href="/#portfolio">Experiencia</a>
+      </div>
+      <div class="mobileMenu__social">
+        <a href="https://github.com/MarcosLabra" target="_blank" rel="noreferrer">
+          <img src="./assets/images/social/gitCat.svg" alt="GitHub logo" />
+        </a>
+        <a href="https://www.linkedin.com/in/marcoslabra/" target="_blank" rel="noreferrer">
+          <img src="./assets/images/social/linkedIn.svg" alt="LinkedIn Logo" />
+        </a>
+      </div>
+    </section>
+
     <section id="cover">
       <img src="./assets/images/corazon.svg" alt="Heart Logo" class="cover__heartLogo" />
       <img src="./assets/images/angle-down.svg" alt="angle-down" class="cover__angleDown" />
@@ -39,15 +55,20 @@
         <div class="aboutMe__container--info">
           <div class="aboutMe__container--profession">
             <p class="aboutMe__container--profession--name">Marcos Labra</p>
-            <p>Desarrollador Front-End</p>
+            <p class="aboutMe__container--profession--rol">Desarrollador Front-End</p>
           </div>
           <div class="aboutMe__container--contact">
             <p class="aboutMe__container--contact--title">
               Contacto:
             </p>
-            <p>mlabra@gmail.com</p>
-            <p>Mar del Plata</p>
-            <p>Argentina</p>
+            <div>
+              <img src="./assets/images/mail.svg" alt="">
+              <p>mlabra@gmail.com</p>
+            </div>
+            <div>
+              <img src="./assets/images/locationHome.svg" alt="">
+              <p>Mar del Plata, ARG</p>
+            </div>
           </div>
         </div>
       </div>
@@ -88,12 +109,12 @@
                 <p>CSS3</p>
               </div>
               <div>
-                <img src="./assets/images/skills/sass.svg" alt="">
-                <p>SASS</p>
-              </div>
-              <div>
                 <img src="./assets/images/skills/javascript.svg" alt="">
                 <p>javascript</p>
+              </div>
+              <div>
+                <img src="./assets/images/skills/sass.svg" alt="">
+                <p>SASS</p>
               </div>
               <div>
                 <img src="./assets/images/skills/react.svg" alt="">
@@ -108,11 +129,11 @@
                     Desarrollo Web en Coderhouse</a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.coderhouse.com/certificados/6221292880ef1b0057aad333"> Curso de
+                  <a target="_blank" href="https://www.coderhouse.com/certificados/621ab08b298193002568b914"> Curso de
                     JavaScript en Coderhouse</a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.coderhouse.com/certificados/6221292880ef1b0057aad333"> Curso de
+                  <a target="_blank" href="https://www.coderhouse.com/certificados/624ce3a9a5fbfe0019829def"> Curso de
                     React en Coderhouse</a>
                 </li>
               </ul>
@@ -176,7 +197,7 @@
             <div class="card__face--back--certificateContainer">
               <ul>
                 <li>
-                  <a target="_blank" href="https://www.coderhouse.com/certificados/6341f0874745ef000fb0e03a">
+                  <a target="_blank" href="https://drive.google.com/file/d/1u_7MAp0ySH4dERCBgp6CaY3u5J-BsRqW/view">
                     Certificado de Scrum Foundation</a>
                 </li>
                 <li>

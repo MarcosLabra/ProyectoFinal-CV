@@ -67,7 +67,9 @@ $bs: 3px 3px 3px hsla(0, 0%, 0%, 0.25);
 }
 //Partials
 @import "./partials/header";
+@import "./partials/mobileMenu";
 @import "./partials/cover";
 @import "./partials/aboutMe";
 @import "./partials/skills";
 @import "./partials/experience";
+@import "./partials/footer";
