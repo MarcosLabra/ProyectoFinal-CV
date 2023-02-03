@@ -34,19 +34,19 @@ body {
 }
 @font-face {
   font-family: dolce;
-  src: url(/assets/fonts/Dolce.ttf);
+  src: url(./assets/fonts/Dolce.ttf);
 }
 @font-face {
   font-family: dolceBold;
-  src: url(/assets/fonts/DolceBold.ttf);
+  src: url(./assets/fonts/DolceBold.ttf);
 }
 @font-face {
   font-family: pioggia;
-  src: url(/assets/fonts/Pioggia.ttf);
+  src: url(./assets/fonts/Pioggia.ttf);
 }
 @font-face {
   font-family: disketMono;
-  src: url(/assets/fonts/DisketMono.ttf);
+  src: url(./assets/fonts/DisketMono.ttf);
 }
 #experience h3, #skills h3, #aboutMe h3 {
   font-family: "dolce";
@@ -196,7 +196,7 @@ body {
 }
 #aboutMe article p {
   color: #FBFBFB;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
   text-align: center;
 }
@@ -217,7 +217,7 @@ body {
   margin-left: 1rem;
   font-family: "disketMono";
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease-in-out;
 }
 #aboutMe a p:hover {
@@ -242,7 +242,7 @@ body {
 }
 #skills .skillsCards__Container .card {
   position: relative;
-  width: 80vw;
+  width: 90vw;
   height: 280px;
   color: white;
   cursor: pointer;
