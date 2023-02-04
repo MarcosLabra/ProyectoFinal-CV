@@ -1,6 +1,6 @@
 #skills {
   padding: 2rem 5%;
-  scroll-margin-top: 9vh;
+  scroll-margin-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@
     .card {
       position: relative;
       width: 90vw;
-      height: 280px;
+      height: 320px;
       color: white;
       cursor: pointer;
       transition: 1s ease-in-out;
@@ -74,8 +74,8 @@
           &--iconContainer {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            width: 70%;
+            justify-content: space-evenly;
+            width: 75%;
             margin-bottom: 2rem;
             div {
               display: flex;
@@ -100,15 +100,21 @@
                 text-align: center;
                 a {
                   display: flex;
+                  flex-direction: column;
                   align-items: center;
                   justify-content: center;
+                  font-weight: 600;
                   width: 100%;
                   font-size: $fs-xl;
-                  color: $casiBlanco;
+                  color: $colorTitulos;
                   text-decoration: none;
                   transition: all ;
                   &:hover{
-                    color: $colorTitulos;
+                    color: $fondoClaro;
+                  }
+                  p{
+                    font-size: $fs-mdg;
+                    color: $casiBlanco;
                   }
                 }
               }
