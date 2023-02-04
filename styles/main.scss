@@ -34,7 +34,7 @@ $colorTitulos: #00d7ff;
 $fondoOscuro: #027c93;
 $fondoClaro: #77fed5;
 $casiNegro: #252525;
-$casiBlanco: #FBFBFB;
+$casiBlanco: #fbfbfb;
 
 //fonts
 @import "./fonts/fonts";
@@ -42,7 +42,7 @@ $dolce: "dolce";
 $dolceBold: "dolceBold";
 $pioggia: "pioggia";
 $disketMono: "disketMono";
-$lato: 'Lato', sans-serif;
+$lato: "Lato", sans-serif;
 
 //font sizes
 $fs-xs: 0.6rem;
@@ -66,6 +66,7 @@ $bs: 3px 3px 3px hsla(0, 0%, 0%, 0.25);
   padding: 2rem;
   text-shadow: $bs;
 }
+
 //Partials
 @import "./partials/header";
 @import "./partials/mobileMenu";

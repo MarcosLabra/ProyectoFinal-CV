@@ -99,7 +99,42 @@ header a .header__brand--name h2 {
   margin: 0.5rem 0 0 1rem;
   transition: all 0.3s ease-in-out;
 }
+header .navBar {
+  display: none;
+}
+header #mobileMenuButton {
+  width: 32px;
+}
 
+@media (min-width: 768px) {
+  header #mobileMenuButton {
+    display: none;
+  }
+  header .navBar {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  header .navBar a {
+    text-decoration: none;
+    margin-left: 2rem;
+    font-family: "dolceBold";
+    color: #00d7ff;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+  header .navBar a:hover {
+    color: #77fed5;
+  }
+  header .navBar a:active {
+    color: #027c93;
+  }
+}
+@media (min-width: 800px) {
+  header {
+    margin-right: 3rem;
+  }
+}
 .mobileMenu {
   z-index: 10;
   display: flex;
@@ -185,7 +220,7 @@ header a .header__brand--name h2 {
 }
 #aboutMe {
   padding: 2rem 5%;
-  scroll-margin-top: 8vh;
+  scroll-margin-top: 6vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -211,7 +246,7 @@ header a .header__brand--name h2 {
 #aboutMe .aboutMe__container--info .aboutMe__container--profession {
   flex-direction: column;
   margin-bottom: 1rem;
-  color: #FBFBFB;
+  color: #fbfbfb;
 }
 #aboutMe .aboutMe__container--info .aboutMe__container--profession--name {
   font-size: 1.6rem;
@@ -232,8 +267,7 @@ header a .header__brand--name h2 {
   margin-bottom: 0.5rem;
 }
 #aboutMe .aboutMe__container--info .aboutMe__container--contact p {
-  margin-bottom: 0.5rem;
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 1.2rem;
 }
 #aboutMe .aboutMe__container--info .aboutMe__container--contact div {
@@ -247,7 +281,7 @@ header a .header__brand--name h2 {
   margin-right: 0.5rem;
 }
 #aboutMe .aboutMe__container--info .aboutMe__container--contact div p {
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 1.2rem;
 }
 #aboutMe article {
@@ -255,7 +289,7 @@ header a .header__brand--name h2 {
   padding: 2rem;
 }
 #aboutMe article p {
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
   text-align: center;
@@ -285,6 +319,56 @@ header a .header__brand--name h2 {
   text-shadow: 3px 3px 3px hsla(0deg, 0%, 0%, 0.25);
 }
 
+@media (min-width: 768px) {
+  #aboutMe {
+    padding: 2rem 10%;
+  }
+  #aboutMe .aboutMe__container {
+    justify-content: flex-start;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #aboutMe .aboutMe__container img {
+    width: 20vw;
+  }
+  #aboutMe .aboutMe__container--info {
+    margin-left: 3rem;
+  }
+  #aboutMe .aboutMe__container--info .aboutMe__container--contact {
+    align-self: flex-start;
+  }
+  #aboutMe article {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 2rem 0rem;
+  }
+}
+@media (min-width: 1200px) {
+  #aboutMe .aboutMe__container {
+    margin-bottom: 2rem;
+  }
+  #aboutMe .aboutMe__container img {
+    width: 15vw;
+  }
+  #aboutMe article p {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1600px) {
+  #aboutMe .aboutMe__container img {
+    width: 10vw;
+  }
+  #aboutMe .aboutMe__container--info {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #aboutMe article {
+    padding: 2rem 20rem;
+  }
+}
 #skills {
   padding: 2rem 5%;
   scroll-margin-top: 10vh;
@@ -334,7 +418,7 @@ header a .header__brand--name h2 {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 #skills .skillsCards__Container .card .card__face--front h4 {
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 2.8rem;
   font-family: "pioggia";
   width: 60%;
@@ -397,9 +481,34 @@ header a .header__brand--name h2 {
 }
 #skills .skillsCards__Container .card .card__face--back--certificateContainer ul li a p {
   font-size: 1.2rem;
-  color: #FBFBFB;
+  color: #fbfbfb;
 }
 
+@media (min-width: 768px) {
+  #skills .skillsCards__Container {
+    justify-content: space-evenly;
+  }
+  #skills .skillsCards__Container .card {
+    width: 40vw;
+  }
+}
+@media (min-width: 1200px) {
+  #skills {
+    padding: 5rem 5%;
+  }
+  #skills h3 {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 1600px) {
+  #skills .skillsCards__Container {
+    justify-content: space-between;
+    width: 80vw;
+  }
+  #skills .skillsCards__Container .card {
+    width: 25vw;
+  }
+}
 #experience {
   padding: 2rem 5%;
   scroll-margin-top: 10vh;
@@ -413,7 +522,7 @@ header a .header__brand--name h2 {
   padding: 2rem 5%;
 }
 #experience .jobContainer h4 {
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 1.6rem;
   font-family: "disketMono";
 }
@@ -424,7 +533,7 @@ header a .header__brand--name h2 {
   margin-bottom: 0.5rem;
 }
 #experience .jobContainer--date {
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 1.2rem;
   font-family: "disketMono";
   margin-bottom: 1rem;
@@ -433,11 +542,29 @@ header a .header__brand--name h2 {
   margin-left: 1rem;
 }
 #experience .jobContainer ul li {
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 1.4rem;
   font-family: "Lato", sans-serif;
 }
 
+@media (min-width: 768px) {
+  #experience {
+    padding: 2rem 10%;
+    align-items: flex-start;
+  }
+  #experience h3 {
+    align-self: center;
+  }
+}
+@media (min-width: 1200px) {
+  #experience {
+    padding: 5rem 10%;
+    align-items: flex-start;
+  }
+  #experience h3 {
+    margin-bottom: 3rem;
+  }
+}
 #proyects {
   padding: 2rem 5%;
   scroll-margin-top: 9vh;
@@ -446,6 +573,102 @@ header a .header__brand--name h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#proyects .portfolio__container h4 {
+  font-family: "pioggia";
+  color: white;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 3px 3px 3px hsla(0deg, 0%, 0%, 0.25);
+}
+#proyects .portfolio__container--wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+#proyects .portfolio__container--wrap .container {
+  margin: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#proyects .portfolio__container--wrap .container .portfolio__container--proyect {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+#proyects .portfolio__container--wrap .container .portfolio__container--proyect--img {
+  width: 300px;
+  height: 188px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px hsla(0deg, 0%, 0%, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+#proyects .portfolio__container--wrap .container .portfolio__container--proyect--description {
+  position: absolute;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  width: 300px;
+  height: 188px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#proyects .portfolio__container--wrap .container .portfolio__container--proyect--description--logo img {
+  filter: drop-shadow(0px 0px 10px rgb(59, 59, 59));
+  transition: all 0.3s ease-in-out;
+  width: 230px;
+}
+#proyects .portfolio__container--wrap .container .portfolio__container--proyect--description--logo img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 20px rgb(126, 124, 124));
+}
+#proyects .portfolio__container--wrap .container .portfolio__container--proyect--links {
+  display: flex;
+}
+#proyects .portfolio__container--wrap .container .portfolio__container--proyect--links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 1rem;
+}
+#proyects .portfolio__container--wrap .container .portfolio__container--proyect--links a img {
+  width: 30px;
+  filter: drop-shadow(0px 0px 20px rgb(126, 124, 124));
+}
+#proyects .portfolio__container--wrap .container .portfolio__container--proyect--links a p {
+  font-family: "disketMono";
+  color: white;
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+#proyects .portfolio__container--wrap .container .portfolio__container--proyect--links a p:hover {
+  color: #00d7ff;
+  text-shadow: 3px 3px 3px hsla(0deg, 0%, 0%, 0.25);
+}
+
+@media (min-width: 1200px) {
+  #proyects {
+    padding: 5rem 10%;
+  }
+  #proyects h3 {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 1600px) {
+  #proyects .portfolio__container--wrap {
+    width: 80vw;
+    justify-content: space-evenly;
+  }
 }
 footer {
   padding: 1rem 1rem;
@@ -456,7 +679,7 @@ footer {
 }
 footer .credits p {
   font-family: "pioggia";
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 1.2rem;
 }
 footer .credits h4 {
@@ -490,16 +713,11 @@ footer .social .social__mail p {
   top: -50px;
   left: -100px;
   padding: 1rem;
-  border-radius: 10px;
   font-family: "disketMono";
   color: #00d7ff;
   font-size: 1.4rem;
-  background: rgba(212, 204, 204, 0.2);
-  border-radius: 10px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(17, 17, 17, 0.7058823529);
+  border-radius: 4px;
   transition: all 0.5s ease-in-out;
 }
 footer .social .social__mail .show {
@@ -525,4 +743,16 @@ footer .social a img {
 footer .social a img:hover {
   cursor: pointer;
   filter: drop-shadow(0 0 10px #00d7ff);
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 1rem 10%;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    padding: 2rem 10%;
+  }
 }/*# sourceMappingURL=main.css.map */

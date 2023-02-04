@@ -108,11 +108,11 @@
                   font-size: $fs-xl;
                   color: $colorTitulos;
                   text-decoration: none;
-                  transition: all ;
-                  &:hover{
+                  transition: all;
+                  &:hover {
                     color: $fondoClaro;
                   }
-                  p{
+                  p {
                     font-size: $fs-mdg;
                     color: $casiBlanco;
                   }
@@ -121,6 +121,39 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #skills {
+    .skillsCards__Container {
+      justify-content: space-evenly;
+
+      .card {
+        width: 40vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #skills {
+    padding: 5rem 5%;
+    h3{
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  #skills {
+    .skillsCards__Container {
+      justify-content: space-between;
+      width: 80vw;
+      .card {
+        width: 25vw;
       }
     }
   }

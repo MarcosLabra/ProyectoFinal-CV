@@ -38,3 +38,23 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  #experience {
+    padding: 2rem 10%;
+    align-items: flex-start;
+    h3 {
+      align-self: center;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #experience {
+    padding: 5rem 10%;
+    align-items: flex-start;
+    h3{
+      margin-bottom: 3rem;
+    }
+  }
+}

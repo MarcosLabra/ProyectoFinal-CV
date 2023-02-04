@@ -13,7 +13,7 @@
 <body>
 
   <header>
-    <a href="#cover">
+    <a id="brand" href="#cover">
       <div class="header__brand">
         <img src="./assets/images/corazonHeader.svg" alt="Logo con forma de corazon anatomico" />
         <div class="header__brand--name">
@@ -22,6 +22,14 @@
         </div>
       </div>
     </a>
+    <nav class="navBar">
+      <div>
+        <a href="#aboutMe">Acerca de mi</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#proyects">Proyectos</a>
+      </div>
+    </nav>
     <img id="mobileMenuButton" src="./assets/images/burgerMenu.svg" />
   </header>
 
@@ -45,7 +53,9 @@
 
     <section id="cover">
       <img src="./assets/images/corazon.svg" alt="Heart Logo" class="cover__heartLogo" />
-      <img src="./assets/images/angle-down.svg" alt="angle-down" class="cover__angleDown" />
+      <a href="#aboutMe">
+        <img src="./assets/images/angle-down.svg" alt="angle-down" class="cover__angleDown" />
+      </a>
     </section>
 
     <section id="aboutMe">
@@ -80,7 +90,7 @@
           escuelas de gestión publica de la provincia</p>
         <p>Hace mas de un año me encuentro formándome para poder volcarme al 100% en ser un desarrollador web, con
           tintes de diseñador UX/UI</p>
-        <p>En mis ratos libres disfruto mucho de jugar a la play, hacer música y compartir con mi familia</p>
+        <p>En mis ratos libres disfruto mucho de jugar a la play, hacer música y compartir con mi familia"</p>
       </article>
 
 
@@ -265,7 +275,108 @@
 
     <section id="proyects">
       <h3>Proyectos</h3>
+      <div class="portfolio__container">
+        <h4>Proyectos Freelance</h4>
+        <div class="portfolio__container--wrap">
+          <div class="container">
+            <div class="portfolio__container--proyect"><img class="portfolio__container--proyect--img"
+                src="./assets/images/portfolio/backgrounds/santiago.png" alt="SantiagoDelEstero.Net">
+              <div class="portfolio__container--proyect--description"><a
+                  href="https://santiagodelestero-net.vercel.app/" target="_blank" rel="noreferrer"
+                  class="portfolio__container--proyect--description--logo"><img
+                    src="./assets/images/portfolio/logos/sgoLogo.png" alt="SantiagoDelEstero.Net"></a></div>
+            </div>
+            <div class="portfolio__container--proyect--links"><a
+                href="https://github.com/MatiLarsson/santiagodelestero.net" target="_blank" rel="noreferrer"><img
+                  src="./assets/images/social/gitCat.svg" alt="github Logo">
+                <p>Repositorio</p>
+              </a><a href="https://santiagodelestero-net.vercel.app/" target="_blank" rel="noreferrer"><img
+                  src="./assets/images/link.svg" alt="github Logo">
+                <p>Link</p>
+              </a></div>
+          </div>
+          <div class="container">
+            <div class="portfolio__container--proyect"><img class="portfolio__container--proyect--img"
+                src="./assets/images/portfolio/backgrounds/thalamus.png" alt="Thalamus centro de alto rendimiento">
+              <div class="portfolio__container--proyect--description"><a href="https://thalamusaltorendimiento.com/"
+                  target="_blank" rel="noreferrer" class="portfolio__container--proyect--description--logo"><img
+                    src="./assets/images/portfolio/logos/ThalamusLogo.svg"
+                    alt="Thalamus centro de alto rendimiento"></a>
+              </div>
+            </div>
+            <div class="portfolio__container--proyect--links"><a href="https://github.com/Kitsunito/thalamus-web"
+                target="_blank" rel="noreferrer"><img src="./assets/images/social/gitCat.svg" alt="github Logo">
+                <p>Repositorio</p>
+              </a><a href="https://thalamusaltorendimiento.com/" target="_blank" rel="noreferrer"><img
+                  src="./assets/images/link.svg" alt="github Logo">
+                <p>Link</p>
+              </a></div>
+          </div>
+          <div class="container">
+            <div class="portfolio__container--proyect"><img class="portfolio__container--proyect--img"
+                src="./assets/images/portfolio/backgrounds/coquere.png" alt="Coquere cocina">
+              <div class="portfolio__container--proyect--description"><a href="http://cocinacoquere.com/"
+                  target="_blank" rel="noreferrer" class="portfolio__container--proyect--description--logo"><img
+                    src="./assets/images/portfolio/logos/coquereLogo.svg" alt="Coquere cocina"></a></div>
+            </div>
+            <div class="portfolio__container--proyect--links"><a href="https://github.com/MarcosLabra/Coquere"
+                target="_blank" rel="noreferrer"><img src="./assets/images/social/gitCat.svg" alt="github Logo">
+                <p>Repositorio</p>
+              </a><a href="http://cocinacoquere.com/" target="_blank" rel="noreferrer"><img
+                  src="./assets/images/link.svg" alt="github Logo">
+                <p>Link</p>
+              </a></div>
+          </div>
+        </div>
+        <h4>Proyects de Estudiante</h4>
+        <div class="portfolio__container--wrap">
+          <div class="container">
+            <div class="portfolio__container--proyect"><img class="portfolio__container--proyect--img"
+                src="./assets/images/portfolio/backgrounds/elHombreIlustrado.png" alt="El hombre illustrado">
+              <div class="portfolio__container--proyect--description"><a href="https://trabajo-final-dw.netlify.app/"
+                  target="_blank" rel="noreferrer" class="portfolio__container--proyect--description--logo"><img
+                    src="./assets/images/portfolio/logos/elHombreIlustradoLogo.png" alt="El hombre illustrado"></a>
+              </div>
+            </div>
+            <div class="portfolio__container--proyect--links"><a target="_blank" rel="noreferrer"><img
+                  src="./assets/images/social/gitCat.svg" alt="github Logo">
+                <p>Repositorio</p>
+              </a><a target="_blank" rel="noreferrer"><img src="./assets/images/link.svg" alt="github Logo">
+                <p>Link</p>
+              </a></div>
+          </div>
+          <div class="container">
+            <div class="portfolio__container--proyect"><img class="portfolio__container--proyect--img"
+                src="./assets/images/portfolio/backgrounds/corina.png" alt="Corina Piercer">
+              <div class="portfolio__container--proyect--description"><a href="https://trabajofinal-js.netlify.app/"
+                  target="_blank" rel="noreferrer" class="portfolio__container--proyect--description--logo"><img
+                    src="./assets/images/portfolio/logos/corinalogo.png" alt="Corina Piercer"></a></div>
+            </div>
+            <div class="portfolio__container--proyect--links"><a target="_blank" rel="noreferrer"><img
+                  src="./assets/images/social/gitCat.svg" alt="github Logo">
+                <p>Repositorio</p>
+              </a><a target="_blank" rel="noreferrer"><img src="./assets/images/link.svg" alt="github Logo">
+                <p>Link</p>
+              </a></div>
+          </div>
+          <div class="container">
+            <div class="portfolio__container--proyect"><img class="portfolio__container--proyect--img"
+                src="./assets/images/portfolio/backgrounds/corinaReact.png" alt="Corina Piercer (react)">
+              <div class="portfolio__container--proyect--description"><a href="https://final-react-coder.netlify.app/"
+                  target="_blank" rel="noreferrer" class="portfolio__container--proyect--description--logo"><img
+                    src="./assets/images/portfolio/logos/corinaLogoReact.png" alt="Corina Piercer (react)"></a></div>
+            </div>
+            <div class="portfolio__container--proyect--links"><a target="_blank" rel="noreferrer"><img
+                  src="./assets/images/social/gitCat.svg" alt="github Logo">
+                <p>Repositorio</p>
+              </a><a target="_blank" rel="noreferrer"><img src="./assets/images/link.svg" alt="github Logo">
+                <p>Link</p>
+              </a></div>
+          </div>
+        </div>
+      </div>
     </section>
+
   </main>
   <footer>
     <div class="credits">

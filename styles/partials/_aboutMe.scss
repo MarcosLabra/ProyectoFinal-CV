@@ -1,6 +1,6 @@
 #aboutMe {
   padding: 2rem 5%;
-  scroll-margin-top: 8vh;
+  scroll-margin-top: 6vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +47,6 @@
           margin-bottom: 0.5rem;
         }
         p {
-          margin-bottom: 0.5rem;
           color: $casiBlanco;
           font-size: $fs-mdg;
         }
@@ -99,6 +98,62 @@
         color: $colorTitulos;
         text-shadow: $bs;
       }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #aboutMe {
+    padding: 2rem 10%;
+    .aboutMe__container {
+      justify-content: flex-start;
+      width: fit-content;
+      img {
+        width: 20vw;
+      }
+      &--info {
+        margin-left: 3rem;
+        .aboutMe__container--contact {
+          align-self: flex-start;
+        }
+      }
+    }
+    article {
+      width: fit-content;
+      padding: 2rem 0rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #aboutMe {
+    .aboutMe__container {
+      margin-bottom: 2rem;
+      img {
+        width: 15vw;
+      }
+    }
+    article{
+      p{
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1600px) {
+  #aboutMe {
+    .aboutMe__container {
+      img {
+        width: 10vw;
+      }
+      &--info{
+        width: fit-content;
+      }
+    }
+    article{
+      padding: 2rem 20rem;
     }
   }
 }

@@ -20,7 +20,7 @@ header {
       }
       &--name {
         h1 {
-          font-family: 'dolce';
+          font-family: "dolce";
           color: white;
           font-size: $fs-xxxl;
           margin-left: 1rem;
@@ -41,5 +41,45 @@ header {
         }
       }
     }
+  }
+  .navBar {
+    display: none;
+  }
+
+  #mobileMenuButton {
+    width: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    #mobileMenuButton {
+      display: none;
+    }
+    .navBar {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
+      a {
+        text-decoration: none;
+        margin-left: 2rem;
+        font-family: $dolceBold;
+        color: $colorTitulos;
+        font-size: $fs-xxl;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: $fondoClaro;
+        }
+        &:active {
+          color: $fondoOscuro;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  header {
+    margin-right: 3rem;
   }
 }
