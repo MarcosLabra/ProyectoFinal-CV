@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -48,7 +49,7 @@ body {
   font-family: disketMono;
   src: url(./fonts/DisketMono.ttf);
 }
-#experience h3, #skills h3, #aboutMe h3 {
+#proyects h3, #experience h3, #skills h3, #aboutMe h3 {
   font-family: "dolce";
   color: #00d7ff;
   font-size: 2.8rem;
@@ -408,8 +409,120 @@ header a .header__brand--name h2 {
   justify-content: center;
   background: rgb(0, 0, 0);
 }
+#experience .jobContainer {
+  padding: 2rem 5%;
+}
+#experience .jobContainer h4 {
+  color: #FBFBFB;
+  font-size: 1.6rem;
+  font-family: "disketMono";
+}
+#experience .jobContainer--enterprise {
+  color: #77fed5;
+  font-size: 2rem;
+  font-family: "pioggia";
+  margin-bottom: 0.5rem;
+}
+#experience .jobContainer--date {
+  color: #FBFBFB;
+  font-size: 1.2rem;
+  font-family: "disketMono";
+  margin-bottom: 1rem;
+}
+#experience .jobContainer ul {
+  margin-left: 1rem;
+}
+#experience .jobContainer ul li {
+  color: #FBFBFB;
+  font-size: 1.4rem;
+  font-family: "Lato", sans-serif;
+}
+
+#proyects {
+  padding: 2rem 5%;
+  scroll-margin-top: 9vh;
+  background: rgb(2, 124, 147);
+  background: linear-gradient(180deg, rgb(2, 124, 147) 0%, rgb(92, 196, 164) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 footer {
-  height: 10vh;
-  width: 100vw;
-  background: #027c93;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+footer .credits p {
+  font-family: "pioggia";
+  color: #FBFBFB;
+  font-size: 1.2rem;
+}
+footer .credits h4 {
+  font-family: "dolce";
+  color: #00d7ff;
+  font-size: 1.4rem;
+}
+footer .credits h4 span {
+  font-family: "dolceBold";
+  color: #00d7ff;
+  font-size: 1.4rem;
+}
+footer .copyright p {
+  font-family: "dolceBold";
+  color: #00d7ff;
+  font-size: 1.4rem;
+}
+footer .social {
+  display: flex;
+  align-items: center;
+}
+footer .social .social__mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+footer .social .social__mail p {
+  opacity: 0;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: "disketMono";
+  color: #00d7ff;
+  font-size: 1.4rem;
+  background: rgba(212, 204, 204, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.5s ease-in-out;
+}
+footer .social .social__mail .show {
+  opacity: 1;
+}
+footer .social .social__mail img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease-in-out;
+}
+footer .social .social__mail img:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 10px #00d7ff);
+}
+footer .social a {
+  padding-left: 1rem;
+}
+footer .social a img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease-in-out;
+}
+footer .social a img:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 10px #00d7ff);
 }/*# sourceMappingURL=main.css.map */

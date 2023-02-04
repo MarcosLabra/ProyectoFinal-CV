@@ -1,0 +1,16 @@
+#proyects {
+  padding: 2rem 5%;
+  scroll-margin-top: 9vh;
+  background: rgb(2, 124, 147);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 124, 147, 1) 0%,
+    rgb(92, 196, 164) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    @extend %title;
+  }
+}

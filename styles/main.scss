@@ -42,6 +42,7 @@ $dolce: "dolce";
 $dolceBold: "dolceBold";
 $pioggia: "pioggia";
 $disketMono: "disketMono";
+$lato: 'Lato', sans-serif;
 
 //font sizes
 $fs-xs: 0.6rem;
@@ -72,4 +73,5 @@ $bs: 3px 3px 3px hsla(0, 0%, 0%, 0.25);
 @import "./partials/aboutMe";
 @import "./partials/skills";
 @import "./partials/experience";
+@import "./partials/proyects";
 @import "./partials/footer";

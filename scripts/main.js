@@ -11,3 +11,8 @@ mobileMenu.addEventListener('click', () => {
   }
 })
 
+document.getElementById('mailIcon').addEventListener('click', () => {
+  document.getElementById('mail').classList.toggle('show')
+})
+
+

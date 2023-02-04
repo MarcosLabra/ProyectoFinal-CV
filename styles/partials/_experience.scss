@@ -9,4 +9,32 @@
   h3 {
     @extend %title;
   }
+  .jobContainer {
+    padding: 2rem 5%;
+    h4 {
+      color: $casiBlanco;
+      font-size: $fs-xl;
+      font-family: $disketMono;
+    }
+    &--enterprise {
+      color: $fondoClaro;
+      font-size: $fs-xxl;
+      font-family: $pioggia;
+      margin-bottom: 0.5rem;
+    }
+    &--date {
+      color: $casiBlanco;
+      font-size: $fs-mdg;
+      font-family: $disketMono;
+      margin-bottom: 1rem;
+    }
+    ul {
+      margin-left: 1rem;
+      li {
+        color: $casiBlanco;
+        font-size: $fs-lg;
+        font-family: $lato;
+      }
+    }
+  }
 }

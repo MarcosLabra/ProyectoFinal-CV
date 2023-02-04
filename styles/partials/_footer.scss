@@ -1,5 +1,84 @@
 footer {
-  height: 10vh;
-  width: 100vw;
-  background: $fondoOscuro;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  .credits {
+    p {
+      font-family: $pioggia;
+      color: $casiBlanco;
+      font-size: $fs-mdg;
+    }
+    h4 {
+      font-family: $dolce;
+      color: $colorTitulos;
+      font-size: $fs-lg;
+      span {
+        font-family: $dolceBold;
+        color: $colorTitulos;
+        font-size: $fs-lg;
+      }
+    }
+  }
+  .copyright {
+    p {
+      font-family: $dolceBold;
+      color: $colorTitulos;
+      font-size: $fs-lg;
+    }
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    .social__mail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      p {
+        opacity: 0;
+        position: absolute;
+        top: -50px;
+        left: -100px;
+        padding: 1rem;
+        border-radius: 10px;
+        font-family: $disketMono;
+        color: $colorTitulos;
+
+        font-size: $fs-lg;
+        background: rgba(212, 204, 204, 0.2);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.5s ease-in-out;
+      }
+      .show {
+        opacity: 1;
+      }
+      img {
+        width: 30px;
+        height: 30px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          filter: drop-shadow(0 0 10px $colorTitulos);
+        }
+      }
+    }
+    a {
+      padding-left: 1rem;
+      img {
+        width: 30px;
+        height: 30px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          filter: drop-shadow(0 0 10px $colorTitulos);
+        }
+      }
+    }
+  }
 }
