@@ -763,4 +763,7 @@ footer .social a img:hover {
   footer {
     padding: 2rem 10%;
   }
+  footer .social .social__mail p {
+    top: -60px;
+  }
 }/*# sourceMappingURL=main.css.map */

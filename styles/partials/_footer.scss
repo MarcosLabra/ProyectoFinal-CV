@@ -87,5 +87,12 @@ footer {
 @media (min-width: 1200px) {
   footer {
     padding: 2rem 10%;
+    .social {
+      .social__mail {
+        p {
+          top: -60px;
+        }
+      }
+    }
   }
 }
