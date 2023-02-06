@@ -107,6 +107,9 @@ header #mobileMenuButton {
 }
 
 @media (min-width: 768px) {
+  header {
+    padding: 0 3%;
+  }
   header #mobileMenuButton {
     display: none;
   }
@@ -115,7 +118,7 @@ header #mobileMenuButton {
     align-items: center;
     margin-right: 1rem;
   }
-  header .navBar a {
+  header .navBar div a {
     text-decoration: none;
     margin-left: 2rem;
     font-family: "dolceBold";
@@ -123,16 +126,20 @@ header #mobileMenuButton {
     font-size: 2rem;
     transition: all 0.3s ease-in-out;
   }
-  header .navBar a:hover {
+  header .navBar div a:hover {
     color: #77fed5;
   }
-  header .navBar a:active {
+  header .navBar div a:active {
     color: #027c93;
   }
+  header .navBar div .active {
+    color: #77fed5;
+    text-decoration: underline;
+  }
 }
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   header {
-    margin-right: 3rem;
+    padding: 0 5%;
   }
 }
 .mobileMenu {
@@ -478,6 +485,7 @@ header #mobileMenuButton {
 }
 #skills .skillsCards__Container .card .card__face--back--certificateContainer ul li a:hover {
   color: #77fed5;
+  filter: drop-shadow(0 0 10px #00d7ff);
 }
 #skills .skillsCards__Container .card .card__face--back--certificateContainer ul li a p {
   font-size: 1.2rem;
